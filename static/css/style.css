@@ -1,0 +1,286 @@
+/* ==========================================================================
+   ESTILO ARTÍSTICO / ORGANICO CON FUENTES MANUSCRITAS Y TRAZOS ANIMADOS
+   ========================================================================== */
+
+:root {
+    --bg-purple-dark: #12091f;
+    --bg-purple-medium: #1d1033;
+    --bg-card: rgba(35, 20, 58, 0.85);
+
+    /* Tonos morados y lavandas inspirados en la imagen */
+    --purple-light: #d8b4fe;
+    --purple-accent: #c084fc;
+    --purple-main: #a855f7;
+    --purple-deep: #7e22ce;
+
+    --text-main: #f3e8ff;
+    --text-muted: #c0a9d8;
+
+    /* Fuentes imperfectas/hechas a mano según la imagen de referencia */
+    --font-handwriting: 'Patrick Hand', cursive;
+    --font-titles: 'Fredoka', cursive, sans-serif;
+}
+
+body {
+    background-color: var(--bg-purple-dark);
+    color: var(--text-main);
+    font-family: var(--font-titles);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Tipografías especiales */
+.text-artistic-title {
+    font-family: var(--font-titles);
+    color: var(--purple-light);
+    letter-spacing: 0.5px;
+}
+
+.handwritten-title {
+    font-family: var(--font-handwriting);
+    font-size: 1.6rem;
+    color: var(--purple-light);
+}
+
+.handwritten-label {
+    font-family: var(--font-handwriting);
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.text-description {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.text-purple-light {
+    color: var(--purple-light) !important;
+}
+
+.text-highlight {
+    color: #935cd3;
+    /* Rosa suave de acento para contrastar */
+    font-family: var(--font-handwriting);
+    font-size: 1.2em;
+}
+
+/* Tarjeta Estilo Dibujo Organico */
+.art-card {
+    background: var(--bg-card);
+    border: 2px solid var(--purple-deep);
+    border-radius: 20px 8px 22px 10px;
+    /* Bordes levemente asimétricos estilo dibujado */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.art-card:hover {
+    transform: translateY(-4px) rotate(-0.5deg);
+    border-color: var(--purple-accent);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.25);
+}
+
+/* Badges con bordes hechos a mano */
+.badge-handdrawn {
+    background: rgba(168, 85, 247, 0.2);
+    color: var(--purple-light);
+    border: 1.5px dashed var(--purple-accent);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-family: var(--font-handwriting);
+    font-size: 1.1rem;
+}
+
+/* Botones con aspecto artesanal */
+.btn-artistic {
+    background: linear-gradient(135deg, var(--purple-main) 0%, var(--purple-deep) 100%);
+    color: #fff;
+    font-family: var(--font-handwriting);
+    font-size: 1.3rem;
+    border: 2px solid var(--purple-light);
+    border-radius: 25px 10px 20px 12px;
+    padding: 8px 24px;
+    transition: all 0.3s ease;
+}
+
+.btn-artistic:hover {
+    transform: scale(1.04) rotate(1deg);
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(192, 132, 252, 0.4);
+}
+
+.btn-artistic-sm {
+    background: var(--purple-main);
+    color: #fff;
+    font-family: var(--font-handwriting);
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: none;
+}
+
+.btn-outline-artistic {
+    background: transparent;
+    color: var(--purple-light);
+    font-family: var(--font-handwriting);
+    font-size: 1.3rem;
+    border: 2px dashed var(--purple-accent);
+    border-radius: 12px 25px 10px 20px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-artistic:hover {
+    background: rgba(168, 85, 247, 0.2);
+    color: #fff;
+    border-style: solid;
+}
+
+/* Navbar */
+.custom-navbar {
+    background: rgba(18, 9, 31, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--purple-deep);
+}
+
+.text-artistic {
+    font-family: var(--font-handwriting);
+    font-size: 1.8rem;
+    color: var(--purple-light);
+    text-decoration: none;
+}
+
+.custom-navbar .nav-link {
+    font-family: var(--font-handwriting);
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--purple-light);
+}
+
+/* ==========================================================================
+   ESTILOS PARA LA ENREDADERA ORNAMENTAL TRANSPARENTE DE FONDO
+   ========================================================================== */
+
+.background-decorations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.55; /* Controla la intensidad visual en el fondo */
+    overflow: hidden;
+}
+
+.vine-left, .vine-right {
+    position: absolute;
+    height: 85vh;
+    width: auto;
+    filter: drop-shadow(0 0 12px rgba(192, 132, 252, 0.35));
+}
+
+.vine-left {
+    top: 5vh;
+    left: -10px;
+}
+
+.vine-right {
+    top: 15vh;
+    right: -10px;
+    transform: scaleX(-1); /* Reflejo especular para el lado derecho */
+}
+
+/* Separadores con dibujo en vivo */
+.flourish-divider {
+    width: 80%;
+    max-width: 450px;
+    height: 40px;
+}
+
+/* Esquinas dibujadas en tarjetas */
+.corner-svg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.corner-tl {
+    top: 8px;
+    left: 8px;
+}
+
+.corner-br {
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    height: 100%;
+    width: 3px;
+    background: var(--purple-deep);
+    border-radius: 2px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -27px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--purple-accent);
+    border: 3px solid var(--bg-purple-dark);
+}
+
+/* Filtros y Formulario */
+.btn-filter {
+    font-family: var(--font-handwriting);
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1.5px dashed var(--purple-deep);
+    border-radius: 15px;
+    padding: 4px 16px;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+    background: var(--purple-main);
+    color: #fff;
+    border-style: solid;
+}
+
+.custom-art-input {
+    background: rgba(20, 10, 35, 0.8);
+    border: 2px solid var(--purple-deep);
+    color: var(--text-main);
+    border-radius: 12px;
+    font-family: var(--font-titles);
+}
+
+.custom-art-input:focus {
+    background: rgba(20, 10, 35, 0.95);
+    border-color: var(--purple-accent);
+    box-shadow: 0 0 12px rgba(192, 132, 252, 0.3);
+    color: var(--text-main);
+}
+
+.social-link {
+    color: var(--purple-light);
+    transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: #fff;
+}

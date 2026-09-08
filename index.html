@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Web Frontend - Skillnest">
+    <meta name="author" content="Catalina Mena">  
+    <title>Portafolio Web Catalina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <div class="background-decorations" aria-hidden="true">
+        <img src="static/images/Code_Generated_Image (1).png" class="vine-left" alt="">
+        <img src="static/images/Code_Generated_Image (1).png" class="vine-right" alt="">
+    </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-artistic" href="#hero">
+                ✦ Catalina Mena ✦
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-1 text-purple-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aprendizaje">Evolución</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-artistic-sm ms-lg-2 px-3 mt-2 mt-lg-0"
+                            href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section d-flex align-items-center min-vh-100 position-relative overflow-hidden">
+        <div class="container position-relative z-1 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="badge badge-handdrawn mb-3">
+                        <i class="bi bi-palette me-1"></i> Estudiante Skillnest - Frontend
+                    </span>
+                    <h1 class="display-3 fw-bold mb-3 text-artistic-title">
+                        ¡Hola! Soy <span class="text-highlight">Catalina Mena</span>
+                    </h1>
+                    <p class="lead text-description mb-4 pe-lg-4">
+                        Desarrollador web en formación. Me gusta crear interfaces únicas combinando HTML semántico, CSS,
+                        Flexbox, manipulación del DOM y Bootstrap.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
+                        <a href="#proyectos" class="btn btn-artistic btn-lg">
+                            <i class="bi bi-journal-richtext me-2"></i>Ver mis proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-outline-artistic btn-lg">
+                            <i class="bi bi-envelope-paper me-2"></i>Escríbeme
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-center justify-content-lg-start gap-3 text-muted align-items-center">
+                        <span class="handwritten-label">Encuéntrame en:</span>
+                        <a href="https://github.com/Meitwk" target="_blank" class="social-link"
+                            aria-label="GitHub"><i class="bi bi-github fs-3"></i></a>
+                        <a href="https://linkedin.com/in/TU-USUARIO" target="_blank" class="social-link"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin fs-3"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <!-- Tarjeta ilustrativa con adornos SVG dibujándose -->
+                    <div class="art-card p-4 text-center position-relative">
+                        <!-- Esquina dibujada -->
+                        <svg class="corner-svg corner-tl" viewBox="0 0 50 50">
+                            <path class="draw-path" d="M 5,45 Q 5,5 45,5 M 5,5 L 20,20" stroke="#d8b4fe"
+                                stroke-width="3" fill="none" />
+                        </svg>
+                        <svg class="corner-svg corner-br" viewBox="0 0 50 50">
+                            <path class="draw-path" d="M 45,5 Q 45,45 5,45 M 45,45 L 30,30" stroke="#d8b4fe"
+                                stroke-width="3" fill="none" />
+                        </svg>
+
+                        <div class="py-4">
+                            <i class="bi bi-code-slash text-purple-light display-1 mb-3"></i>
+                            <h3 class="h4 handwritten-title mb-2">Código e Imaginación</h3>
+                            <p class="small text-description">
+                                Escribiendo lógica limpia con JavaScript, dando forma al contenido con HTML y maquetando
+                                con CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEPARADOR CON FILIGRANA DIBUJÁNDOSE -->
+    <div class="text-center my-4">
+        <svg class="flourish-divider" viewBox="0 0 500 40" fill="none">
+            <path class="draw-path"
+                d="M 10,20 Q 100,5 200,20 T 250,20 T 300,20 T 490,20 M 250,5 C 240,35 260,35 250,5 M 230,20 C 230,10 270,10 270,20"
+                stroke="#c084fc" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Sobre mí</h2>
+                <p class="text-description">Mi proceso creativo y aprendizaje en el código</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="art-card p-4 p-md-5 h-100">
+                        <h3 class="h4 handwritten-title mb-3">
+                            <i class="bi bi-pencil-line me-2"></i>Perfil en Formación
+                        </h3>
+                        <p class="text-description">
+                            [DESCRIPCIÓN PERSONAL: Estudiante apasionado del programa de desarrollo web en Skillnest. Me
+                            enfoco en construir páginas estructuradas y visualmente llamativas usando HTML5, CSS3 y
+                            JavaScript.]
+                        </p>
+                        <p class="text-description">
+                            [INTERESES: Me encanta dar solución a desafíos de lógica como bucles, arreglos y manipular
+                            el DOM de la página para que reaccione dinámicamente a las acciones del usuario.]
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="art-card p-4 p-md-5 h-100">
+                        <h3 class="h4 handwritten-title mb-3">
+                            <i class="bi bi-stars me-2"></i>Habilidades Aprendidas
+                        </h3>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-description mb-0">
+                            <li class="d-flex align-items-start gap-2">
+                                <i class="bi bi-flower2 text-purple-light fs-5"></i>
+                                <span><strong>Estructura & Maquetación:</strong> HTML semántico, Flexbox, Modelo de
+                                    Cajas y Bootstrap.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <i class="bi bi-flower2 text-purple-light fs-5"></i>
+                                <span><strong>Interactividad & DOM:</strong> Uso de <code>querySelector</code>, eventos
+                                    <code>onclick</code>, <code>hover</code> e inserción dinámica.</span>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <i class="bi bi-flower2 text-purple-light fs-5"></i>
+                                <span><strong>Lógica JS:</strong> Variables, condicionales, ciclos, arreglos y
+                                    objetos.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Tecnologías</h2>
+                <p class="text-description">Herramientas dominadas en la malla de estudio</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- HTML5 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-filetype-html display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">HTML5</h4>
+                        <span class="badge badge-handdrawn mb-2">Completado</span>
+                        <p class="small text-description mb-0">Estructura, formularios y tablas.</p>
+                    </div>
+                </div>
+                <!-- CSS3 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-filetype-css display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">CSS3</h4>
+                        <span class="badge badge-handdrawn mb-2">Completado</span>
+                        <p class="small text-description mb-0">Flexbox, Box Model y animaciones.</p>
+                    </div>
+                </div>
+                <!-- JavaScript -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-filetype-js display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">JavaScript</h4>
+                        <span class="badge badge-handdrawn mb-2">Práctica</span>
+                        <p class="small text-description mb-0">DOM, eventos y algoritmos.</p>
+                    </div>
+                </div>
+                <!-- Bootstrap -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-bootstrap display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">Bootstrap</h4>
+                        <span class="badge badge-handdrawn mb-2">Intermedio</span>
+                        <p class="small text-description mb-0">Componentes y diseño fluido.</p>
+                    </div>
+                </div>
+                <!-- VS Code -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-code-square display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">VS Code</h4>
+                        <span class="badge badge-handdrawn mb-2">Dominado</span>
+                        <p class="small text-description mb-0">Editor e integración.</p>
+                    </div>
+                </div>
+                <!-- Git/GitHub -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="art-card p-3 text-center h-100">
+                        <i class="bi bi-github display-5 text-purple-light mb-2"></i>
+                        <h4 class="h6 handwritten-title mb-1">Git / Pages</h4>
+                        <span class="badge badge-handdrawn mb-2">Práctica</span>
+                        <p class="small text-description mb-0">Publicación en GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS CORE -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Proyectos Core</h2>
+                <p class="text-description">Trabajos evaluados en la plataforma</p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="project-filters">
+                    <button class="btn btn-filter active" data-filter="todos">Todos</button>
+                    <button class="btn btn-filter" data-filter="html-css">HTML/CSS</button>
+                    <button class="btn btn-filter" data-filter="javascript">JavaScript / DOM</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projects-container">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="html-css">
+                    <div class="art-card h-100 p-4 d-flex flex-column">
+                        <div class="project-icon-box text-center mb-3 py-3">
+                            <i class="bi bi-ui-checks display-4 text-purple-light"></i>
+                        </div>
+                        <span class="badge badge-handdrawn align-self-start mb-2">HTML Basics Core</span>
+                        <h3 class="h5 handwritten-title mb-2">Formulario de Registro</h3>
+                        <p class="text-description small flex-grow-1">
+                            Diseño de formulario con validaciones básicas, inputs variados, selectores y etiquetas
+                            semánticas.
+                        </p>
+                        <div class="d-flex gap-2 mt-3">
+                            <button class="btn btn-outline-artistic btn-sm w-100 view-modal-btn"
+                                data-title="Formulario de Registro (Core)"
+                                data-desc="Proyecto enfocado en la semántica de formularios HTML, agrupación de datos con fieldsets y controles de entrada."
+                                data-tech="HTML5, CSS3, Modelo de Cajas" data-repo="https://github.com/Meitwk/Skillnest_fundamentos_web/tree/main/STACK_HTML/08_Formulario%20de%20registro%20(Core)">
+                                Detalles
+                            </button>
+                            <a href="https://github.com/Meitwk" target="_blank" class="btn btn-artistic-sm btn-sm"
+                                aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="html-css">
+                    <div class="art-card h-100 p-4 d-flex flex-column">
+                        <div class="project-icon-box text-center mb-3 py-3">
+                            <i class="bi bi-person-badge-fill display-4 text-purple-light"></i>
+                        </div>
+                        <span class="badge badge-handdrawn align-self-start mb-2">Posiciones Core</span>
+                        <h3 class="h5 handwritten-title mb-2">Tarjeta de Usuario & Perfil</h3>
+                        <p class="text-description small flex-grow-1">
+                            Maquetación de perfil con posiciones CSS (`relative`, `absolute`) y diseño modular.
+                        </p>
+                        <div class="d-flex gap-2 mt-3">
+                            <button class="btn btn-outline-artistic btn-sm w-100 view-modal-btn"
+                                data-title="Página de Perfil de Usuario"
+                                data-desc="Demostración de dominio de la propiedad position, z-index y modelo de caja."
+                                data-tech="CSS Posiciones, Flexbox, HTML5" data-repo="https://github.com/Meitwk/Skillnest_fundamentos_web/tree/main/STACK_CSS/22_pagina_perfil_(Core)">
+                                Detalles
+                            </button>
+                            <a href="https://github.com/Meitwk" target="_blank" class="btn btn-artistic-sm btn-sm"
+                                aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="javascript">
+                    <div class="art-card h-100 p-4 d-flex flex-column">
+                        <div class="project-icon-box text-center mb-3 py-3">
+                            <i class="bi bi-hand-thumbs-up-fill display-4 text-purple-light"></i>
+                        </div>
+                        <span class="badge badge-handdrawn align-self-start mb-2">DOM JS Core</span>
+                        <h3 class="h5 handwritten-title mb-2">Proyecto Me Gusta (Likes)</h3>
+                        <p class="text-description small flex-grow-1">
+                            Interacción dinámica con el DOM para contadores numéricos mediante `querySelector` y
+                            `onclick`.
+                        </p>
+                        <div class="d-flex gap-2 mt-3">
+                            <button class="btn btn-outline-artistic btn-sm w-100 view-modal-btn"
+                                data-title="Proyecto Me Gusta (DOM)"
+                                data-desc="Ejercicio Core enfocado en capturar eventos click y modificar elementos HTML/CSS mediante JavaScript."
+                                data-tech="JavaScript, DOM, Eventos" data-repo="https://github.com/Meitwk/Skillnest_fundamentos_web/tree/main/STACK_JS/18_botones_me_gusta_(Core)">
+                                Detalles
+                            </button>
+                            <a href="https://github.com/Meitwk" target="_blank" class="btn btn-artistic-sm btn-sm"
+                                aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO / EVOLUCIÓN -->
+    <section id="aprendizaje" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Línea de Tiempo</h2>
+                <p class="text-description">Camino de aprendizaje en la plataforma</p>
+            </div>
+
+            <div class="timeline position-relative mx-auto" style="max-width: 750px;">
+                <div class="timeline-item mb-4 ps-4 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="art-card p-4">
+                        <span class="badge badge-handdrawn mb-2">Módulo 1</span>
+                        <h3 class="h5 handwritten-title mb-1">HTML Basics & Semántica</h3>
+                        <p class="text-description small mb-0">Estructura web, indentación limpia, formularios y
+                            multimedia.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-4 ps-4 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="art-card p-4">
+                        <span class="badge badge-handdrawn mb-2">Módulo 2</span>
+                        <h3 class="h5 handwritten-title mb-1">Selectores, Caja & Flexbox</h3>
+                        <p class="text-description small mb-0">Márgenes, padding, posiciones CSS y layouts flexibles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-4 ps-4 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="art-card p-4">
+                        <span class="badge badge-handdrawn mb-2">Módulo 3</span>
+                        <h3 class="h5 handwritten-title mb-1">Fundamentos de JavaScript</h3>
+                        <p class="text-description small mb-0">Variables, ciclos, condicionales, funciones y arreglos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item ps-4 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="art-card p-4">
+                        <span class="badge badge-handdrawn mb-2">Módulo 4</span>
+                        <h3 class="h5 handwritten-title mb-1">DOM y Eventos en el Buscador</h3>
+                        <p class="text-description small mb-0">Eventos de click/hover, selección con querySelector y
+                            cambios dinámicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO EMBEBIDO -->
+    <section id="video" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Video de Presentación</h2>
+                <p class="text-description"></p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="art-card p-3 text-center">
+                        <div class="ratio ratio-16x9 rounded overflow-hidden">
+                            <video controls
+                                poster="https://via.placeholder.com/1280x720/1e1233/d8b4fe?text=Video+de+Presentacion">
+                                <source src="assets/videos/presentacion.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video HTML5.
+                            </video>
+                        </div>
+                        <p class="text-description small mt-3 mb-0">
+                            <i class="bi bi-file-earmark-play me-1"></i>Archivo preparado en:
+                            <code>assets/videos/presentacion.mp4</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-artistic-title">Contacto</h2>
+                <p class="text-description">Envíame un mensaje directo</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="art-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h4 handwritten-title mb-4">Información</h3>
+                            <div class="d-flex flex-column gap-3 mb-4">
+                                <a href="mailto:tuemail@ejemplo.com"
+                                    class="d-flex align-items-center gap-3 text-description text-decoration-none">
+                                    <i class="bi bi-envelope-at fs-4 text-purple-light"></i>
+                                    <span>catalina.menatw@gmail.com</span>
+                                </a>
+                                <a href="https://github.com/Meitwk" target="_blank"
+                                    class="d-flex align-items-center gap-3 text-description text-decoration-none">
+                                    <i class="bi bi-github fs-4 text-purple-light"></i>
+                                    <span>github.com/Meitwk</span>
+                                </a>
+                                <a href="https://linkedin.com/in/TU-USUARIO" target="_blank"
+                                    class="d-flex align-items-center gap-3 text-description text-decoration-none">
+                                    <i class="bi bi-linkedin fs-4 text-purple-light"></i>
+                                    <span>linkedin.com/in/TU-USUARIO</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-3 art-card text-center">
+                            <p class="small text-description mb-0">✦ Estudiante Activo en Skillnest ✦</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="art-card p-4 p-md-5">
+                        <h3 class="h4 handwritten-title mb-4">Formulario de Contacto</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label handwritten-label">Nombre Completo</label>
+                                <input type="text" class="form-control custom-art-input" id="nombre"
+                                    placeholder="Tu nombre..." required>
+                                <div class="invalid-feedback">Escribe tu nombre.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label handwritten-label">Correo Electrónico</label>
+                                <input type="email" class="form-control custom-art-input" id="email"
+                                    placeholder="correo@ejemplo.com" required>
+                                <div class="invalid-feedback">Ingresa un correo válido.</div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label handwritten-label">Mensaje</label>
+                                <textarea class="form-control custom-art-input" id="mensaje" rows="4"
+                                    placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+                            </div>
+                            <button type="submit" class="btn btn-artistic w-100 py-2">
+                                <i class="bi bi-send me-2"></i>Enviar Mensaje
+                            </button>
+                        </form>
+                        <div id="formAlert" class="alert alert-success mt-3 d-none handwritten-label text-center"
+                            role="alert">
+                            ¡Mensaje validado correctamente con JavaScript!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-purple-subtle text-center">
+        <div class="container text-description small">
+            <p class="mb-1">&copy; 2026 Catalina Mena - Portafolio</p>
+            <p class="mb-0"></p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE PROYECTO -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content art-card text-light p-2">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title handwritten-title fs-3" id="modalTitle">Detalles</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-description">
+                    <p id="modalDesc"></p>
+                    <hr class="border-purple-subtle">
+                    <p class="mb-1"><strong>Tecnologías aplicadas:</strong></p>
+                    <p id="modalTech" class="badge badge-handdrawn fs-6"></p>
+                </div>
+                <div class="modal-footer border-0">
+                    <a id="modalRepo" href="#" target="_blank" class="btn btn-outline-artistic btn-sm">Ver
+                        Repositorio</a>
+                    <button type="button" class="btn btn-artistic-sm btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
