@@ -27,13 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDesc = document.getElementById('modalDesc');
     const modalTech = document.getElementById('modalTech');
     const modalRepo = document.getElementById('modalRepo');
+    const modalDemo = document.getElementById('modalDemo');
 
     document.querySelectorAll('.view-modal-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             modalTitle.textContent = btn.getAttribute('data-title');
             modalDesc.textContent = btn.getAttribute('data-desc');
             modalTech.textContent = btn.getAttribute('data-tech');
+
+            // Asignación de enlaces para código y demo
             modalRepo.setAttribute('href', btn.getAttribute('data-repo'));
+
+            const demoUrl = btn.getAttribute('data-demo');
+            if (demoUrl) {
+                modalDemo.setAttribute('href', demoUrl);
+                modalDemo.style.display = 'inline-block';
+            } else {
+                modalDemo.style.display = 'none';
+            }
+
             projectModal.show();
         });
     });
