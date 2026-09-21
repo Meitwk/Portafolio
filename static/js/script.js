@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const modalRepo = document.getElementById('modalRepo');
         const modalDemo = document.getElementById('modalDemo');
 
-        document.querySelectorAll('.view-modal-btn').forEach(btn => {
+        document.querySelectorAll('.open-modal-trigger').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 modalTitle.textContent = btn.getAttribute('data-title') || '';
